@@ -7,15 +7,34 @@
 - Developer - Hector @githubname
 
 ##File Locations
-- **Dropbox**: Mitchel and Associates Accountants- SURGE
-- **Clients**: MITCHELL AND ASSOCIATES ACCOCUNTANTS
-- **Website NAS**
+- **Dropbox**: 		Mitchel and Associates Accountants- SURGE
+- **Clients**: 		MITCHELL AND ASSOCIATES ACCOCUNTANTS
+- **Website NAS**   mitchellandassociatesaccountants.com.au
 
 ##Servers
----
-####SURGE - AWS4 - (Linux)
 
-
+```
++===================================+
+| New Account Info                  |
++===================================+
+| Domain: mitchellacct.com
+| Ip: 54.79.72.151 (n) - SURGE - AWS4 - (Linux)
+| HasCgi: y
+| UserName: mit04331
+| PassWord: AiBH{}kX+eE{
+| CpanelMod: x3
+| HomeRoot: /home
+| Quota: unlimited Meg
+| NameServer1: swc2.soliddirect.com.au
+| NameServer2: s4.surgehost.com.au
+| NameServer3: 
+| NameServer4: 
+| Contact Email: 
+| Package: default
+| Feature List: default
+| Language: en
++===================================+
+```
 
 
 
