@@ -27,13 +27,13 @@ if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'basetheme');
+	define('DB_NAME', 'mit04331_jollyhelp38');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'basetheme');
+	define('DB_USER', 'mit04331_7uMWxEN');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'basetheme');
+	define('DB_PASSWORD', 'zh*a9aJ2zVsWAa56Cd!+');
 }
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
@@ -58,14 +58,14 @@ if (!defined('DB_COLLATE')) {
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '@FrFv<j}m}t%[vuh)JRM2<ao-.C^%5y@0(@|VeF-)$Lw=j35JY]b77NT9Y;9qP[d');
-define('SECURE_AUTH_KEY',  'O@$ [-+W0a6%URfo1SFy5+B9<YJM~6cqL-9-45myvcNF1)+Dh+c[hPC>fth:YX:-');
-define('LOGGED_IN_KEY',    ';JLb|JjBfKc`hfiN`YH[.AbbJ@S|<~d#Tq6*v3Ie|B>%)L1nlZeT!K(31hO0#-NR');
-define('NONCE_KEY',        ';j?$|yW5/TK{8W?BROqo*4x4;5kCXNK+H^Y[dMqjc`tlZkcH=%X!s/e3vb)naK;/');
-define('AUTH_SALT',        '.st.].GN1S=PRe)+|m Q!73E`bO/QLs3uQPM%hIi%fy(=%zX<{|-wnK8zyBBn?`^');
-define('SECURE_AUTH_SALT', 'F6LqSNu4*S/c-VR,`?WMyr$,s {N{n[KE,fAP_b 2{~@G`sZkZ]GU>D,[_YX3qJr');
-define('LOGGED_IN_SALT',   '{]OI(Y)M};6Zo9}DwPY8zd&<KrTB>F|M9:183Xj$3yBS,B5:$l-l3hsP8h$qH$j]');
-define('NONCE_SALT',       'CVo0q}Feg/K2GA756iQw*-d*0)=nAGEang<t=[0/,6on{uMf,H(Kt.Q8v+iX75F#');
+define('AUTH_KEY',         '<HnG);:814i;5>UB:v|4!Xg$->Fjo1Q[XngYg+Xi*i~OWVE:QfROJ!Hb0)tkC-6>');
+define('SECURE_AUTH_KEY',  'x4Ypv_D)+YOVL6Z?;A#_Z9*W2 5u*uOPE/|l~pW*,;Txz:)a! :Y(-C| ?xVN<o5');
+define('LOGGED_IN_KEY',    '$m+qH.^?HXeb|S|%JlAX`h2D@#:$WdDsZN;8pS{Q,eDU$xU_W5gzZ_ZuGL]WkSW:');
+define('NONCE_KEY',        'kuLjwi}Z<_*Z(#|WIGcBK+;}fX(L%JU%ovLV~4]Z ko|=S~iFP+`-Rv+f8hHV*mC');
+define('AUTH_SALT',        'uJE+wazbd%Z8<t_>s5*&f_j|7}{S@;vH ph~#B;KT Kb /=}ebu+%mn>dZ+`q^E=');
+define('SECURE_AUTH_SALT', '3dZMP:Vc57o^I0._>nQ1frBU^xF!$+*jjCrUkp |-x(_Z(;Q-/cq?re}%7!a@C9Q');
+define('LOGGED_IN_SALT',   'c8,JeyPW$1p|!Rmg.*Gb$-`QJ3Dyq=(W=T.|WI7%Z&$-OTFSPjvyoA![TGmTku>w');
+define('NONCE_SALT',       't@!D;}s-|7$Y`4f#+{[aOmZC)&|zJ$#|;|hQ: HTX~*YLoA.R{U54B[U-o6}mCHn');
 
 /**#@-*/
 
