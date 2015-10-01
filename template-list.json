@@ -1,0 +1,30 @@
+[
+    {
+        "path": "render/templates/layouts/about.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/contact.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/home.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/index.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/resources.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/service.html",
+        "content": null
+    },
+    {
+        "path": "render/templates/layouts/services.html",
+        "content": null
+    }
+]
