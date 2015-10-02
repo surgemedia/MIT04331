@@ -6188,10 +6188,12 @@ p {
   #jumbotron-home h1 {
     text-transform: capitalize; }
 
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   #jumbotron-home {
     padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-bottom: 10vh;
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 #card-area {
   padding: 5vh; }
@@ -6204,7 +6206,8 @@ p {
   filter: grayscale(100%); }
 
 #share ul, #share li {
-  list-style: none; }
+  list-style: none;
+  display: inline-block; }
 
 #share i {
   padding: 1em;
