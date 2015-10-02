@@ -6188,6 +6188,11 @@ p {
   #jumbotron-home h1 {
     text-transform: capitalize; }
 
+@media (min-width: 768px) {
+  #jumbotron-home {
+    padding-top: 10vh;
+    padding-bottom: 10vh; } }
+
 #card-area {
   padding: 5vh; }
 
@@ -6197,6 +6202,9 @@ p {
 #logos img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+
+#share ul, #share li {
+  list-style: none; }
 
 #share i {
   padding: 1em;
@@ -6209,6 +6217,8 @@ p {
 #footer {
   background: #1695A3;
   padding-top: 2em; }
+  #footer ul, #footer li {
+    list-style: none; }
   #footer span {
     font-weight: bold;
     color: #225378; }
