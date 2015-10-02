@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=" ">
+<html class=" -class ">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,12 +38,12 @@
 		</ul>
 	</div>	 
 <script>
-		$.getJSON('/render/template-list.json', function(json) {
+		$.getJSON('/template-list.json', function(json) {
 			console.log(json);
 			for (var i = json.length - 1; i >= 0; i--) {
 				console.log(json[i]['path'])
 				console.log(json[i]['path'].split('/'));
-				var html = "<li><a href='"+json[i]['path']+"'>"+json[i]['path']+"</a></li>";
+				var html = "<li><a href='"+json[i]['path'].replace('render/',"")+"'>"+json[i]['path']+"</a></li>";
 				$('#templates-buildtool').append('<ul>');
 				$('#templates-buildtool').append(html)
 				$('#templates-buildtool').append('</ul>');
