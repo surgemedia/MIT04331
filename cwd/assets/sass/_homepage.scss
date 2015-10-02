@@ -13,7 +13,7 @@
 	}
 
 }
-@media (min-width: 768px) {
+@media (max-width: 500px) {
 	#jumbotron-home {
 		padding-top:10vh;
 		padding-bottom:10vh;
@@ -40,6 +40,7 @@
 #share {
 	ul,li {
 		list-style:none;
+		display:inline-block;
 	}
 	i {
 		padding:1em;
