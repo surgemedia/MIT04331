@@ -1,18 +1,18 @@
 <?php 
 // Register Custom Taxonomy
-function people_groups() {
+function teams() {
 
 	$labels = array(
-		'name'                       => _x( 'People Groups', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'People Group', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'People Group', 'text_domain' ),
-		'all_items'                  => __( 'All People Groups', 'text_domain' ),
-		'parent_item'                => __( 'Parent People Group', 'text_domain' ),
-		'parent_item_colon'          => __( 'Parent People Group:', 'text_domain' ),
-		'new_item_name'              => __( 'New People Group', 'text_domain' ),
-		'add_new_item'               => __( 'Add People Group', 'text_domain' ),
-		'edit_item'                  => __( 'Edit People Group', 'text_domain' ),
-		'update_item'                => __( 'Update People Group', 'text_domain' ),
+		'name'                       => _x( 'Teams', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Team', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Team', 'text_domain' ),
+		'all_items'                  => __( 'All Teams', 'text_domain' ),
+		'parent_item'                => __( 'Parent Team', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Team:', 'text_domain' ),
+		'new_item_name'              => __( 'New Team', 'text_domain' ),
+		'add_new_item'               => __( 'Add Team', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Team', 'text_domain' ),
+		'update_item'                => __( 'Update Team', 'text_domain' ),
 		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
 		'search_items'               => __( 'Search Items', 'text_domain' ),
 		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
@@ -20,7 +20,7 @@ function people_groups() {
 		'not_found'                  => __( 'Not Found', 'text_domain' ),
 	);
 $rewrite = array(
-		'slug'                       => 'people_group',
+		'slug'                       => 'team',
 		'with_front'                 => true,
 		'hierarchical'               => false,
 	);
@@ -34,12 +34,12 @@ $rewrite = array(
 		'show_tagcloud'              => false,
 		'rewrite'                    => $rewrite,
 	);
-	register_taxonomy( 'people_group', array( 'people' ), $args );
+	register_taxonomy( 'team', array( 'people' ), $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'people_groups', 0 );
+add_action( 'init', 'teams', 0 );
 
 // Register Custom Post Type
 function people_post() {

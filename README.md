@@ -44,42 +44,42 @@ Password: zh*a9aJ2zVsWAa56Cd!+
 ```
 
 ##Post Types
-- Newsletter(posts)
-- Services
-- Team
-- Useful Links
-- Forms
+- Newsletter(posts) √
+- Services √
+- Team √
+- Useful Links √
+- Forms √
 
 ##ACF Fields
-- Newsletters-PostType-Fields
-  - Title
-  - Content
+- ~~Newsletters-PostType-Fields~~ 
+  - ~~Title~~
+  - ~~Content~~
 
-- Useful_Link-PostType-Fields
+- Useful_Link-PostType-Fields √
   - Title
   - Content
   - Url
   
-- Forms-PostType-Fields
+- Forms-PostType-Fields √
   - Title
   - Content
   - File (pdf)
 
-- Home-Template-Fields
-  - Title
-  - Content
+- ~~Home-Template~~ 
+  - ~~Title~~
+  - ~~Content~~
   
 - Team-PostType-Fields
   - Title (Name)
   - Content (default)
   - Role 
-  - Link
+  - ~~Link~~
   - Feature Img
   
-- Contact-Page-Fields
+- Contact-Page-Fields √
   - Google Map / Office Photo
   
-- Business-Page-Fields
+- Business-Page-Fields √
   - Repeater
     - Title
     - Content
@@ -88,7 +88,7 @@ Password: zh*a9aJ2zVsWAa56Cd!+
       - icon
       - content
  
-- Option-Page-Fields
+- Option-Page-Fields √
   - Title
   - Address
   - Phone
@@ -96,7 +96,7 @@ Password: zh*a9aJ2zVsWAa56Cd!+
   - Copy right
   - Logos Gallery
   
-- Services-PostType-Fields
+- Services-PostType-Fields 
   - Title
   - Content
   - Repeater

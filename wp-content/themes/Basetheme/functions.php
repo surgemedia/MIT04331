@@ -19,8 +19,19 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
+  'post_types/action-raname-posts.php',    // Newsletters
+  'post_types/post-type-useful-links.php',    // Useful Links
+  'post_types/post-type-team.php',    // Forms
+  'post_types/post-type-forms.php',    // Teams
+  'post_types/post-type-services.php',    // Services
 
 ];
+
+if( function_exists('acf_add_options_page') ) {
+  
+  acf_add_options_page();
+  
+}
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
