@@ -69,7 +69,7 @@ Password: zh*a9aJ2zVsWAa56Cd!+
   - ~~Title~~
   - ~~Content~~
   
-- Team-PostType-Fields
+- Team-PostType-Fields √
   - Title (Name)
   - Content (default)
   - Role 
