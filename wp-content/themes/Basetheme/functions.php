@@ -19,6 +19,7 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
+  'lib/function-svg-upload-able.php', // SVG able to upload
   'post_types/action-raname-posts.php',    // Newsletters
   'post_types/post-type-useful-links.php',    // Useful Links
   'post_types/post-type-team.php',    // Forms

@@ -85,3 +85,8 @@
   });
 
 })(jQuery); // Fully reference jQuery after this point.
+
+jQuery( document ).ready(function() {
+  jQuery(".form-field div select").chosen({disable_search_threshold: 10});
+    console.log( "ready!" );
+});
