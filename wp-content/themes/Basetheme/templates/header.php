@@ -1,12 +1,12 @@
 <header class="banner" role="banner">
-  <div class="container">
+  <div class="fluid-container">
     
-    <div class="brand col-lg-4">
+    <div class="brand col-lg-3">
       <a class="" href="<?= esc_url(home_url('/')); ?>">
-        <img src="<?php the_field('company_logo','option') ?>" alt="<?php bloginfo('name'); ?>">
+        <img src="<?php the_field('company_logo','option') ?>" alt="<?php bloginfo('name'); ?>" width='360'>
       </a>
     </div>
-    <nav class="navbar navbar-default col-xs-12 col-lg-8">
+    <nav class="navbar navbar-default col-xs-12 col-lg-6">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
           <span class="icon-bar"></span>
@@ -22,12 +22,16 @@
               endif;
           ?>
           
-          <div class="contact-icons">
-            <span class="icon-envelope" aria-hidden="true"></span>
-            <span class="icon-phone" aria-hidden="true"></span>
-            <span class="icon-linkedin" aria-hidden="true"></span>
-          </div>
+          
       </div>
     </nav>
+    <div class="contact-icons text-right col-lg-3">
+          
+            
+              <span class="icon-envelope" aria-hidden="true"></span>
+              <span class="icon-outline-phone" aria-hidden="true"></span>
+            <div class="line"></div>
+            <span class="icon-linkedin" aria-hidden="true"></span>
+          </div>
   </div>
 </header>

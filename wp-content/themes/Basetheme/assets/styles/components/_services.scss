@@ -1,0 +1,48 @@
+.card{
+	height: 550px;
+	padding: 1.5em;
+	.sub-background{
+		padding: 1.5em;
+		background: #fff;
+		opacity: .8;
+		line-height: 1.8;
+		transition: all ease 0.3s;
+		ul{
+			padding-top: .7em;
+			list-style: none;
+			padding-left:0;
+			li:before{
+				content: '•';
+			}
+		}
+		a{
+			width: 100%;
+	    border: 2px solid grey;
+	    height: 60px;
+	    display: inline-block;
+	    padding: .8em;
+	    color: #333;
+	    text-decoration: none;
+			
+		}
+		
+	}
+
+}
+
+.services{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.service-row{
+	height:850px;
+	padding: 4em 0;
+	
+	.header{
+		
+	}
+	.services-section{
+		margin-top: 3em;
+	}
+}

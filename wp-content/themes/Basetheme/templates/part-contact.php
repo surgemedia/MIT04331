@@ -11,8 +11,10 @@
 
         </div>
 
-        <div class="col-lg-8 form">
-          <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]') ?>
+        <div class="col-lg-8">
+          <div class="form">
+             <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]') ?>
+          </div>
         </div>
     <?php endwhile;
     // reset post data (important!)

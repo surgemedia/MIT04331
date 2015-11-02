@@ -9,7 +9,8 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "bootstrap-sass-official": "3.3.5",
-    "chosen": "*"
+    "chosen": "*",
+    "owl.carousel": "*"
   },
   "overrides": {
     "modernizr": {
@@ -18,6 +19,11 @@
     "chosen": {
       "main": [
         "./chosen.jquery.min.js"
+      ]
+    },
+    "owl.carousel": {
+      "main": [
+        "./dist/owl.carousel.js"
       ]
     },
     "bootstrap-sass-official": {

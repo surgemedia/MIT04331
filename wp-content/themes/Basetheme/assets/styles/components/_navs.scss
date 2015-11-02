@@ -1,16 +1,125 @@
 /*===================================
 =            Primary Nav            =
 ===================================*/
+.fluid-container{
+    padding: .75em 1em 4.81em .75em;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+
+}
+
 .brand{
-	margin-top:2em;
+	margin-top: 1em;
 }
 .navbar-default{
-	margin-top:2em;
+	
+	margin-bottom:0;
+	background: none;
+	border:0;
+	padding-top: 1.5em;
 }
 .contact-icons{
+	padding-top: 0.5em;
+	.line{
+		border-right: 2px solid grey;
+		width: 1px;
+		height: 18px;
+		display: inline-block;
+	}
 	span {
 	font-size: 1.5em;
   line-height: 2;
   vertical-align: baseline;
+  padding-right: .25em;
+  padding-left: .25em;
   }
+}
+.icon-linkedin{
+	color: $linkedin-color;
+}
+/*======================================
+=            MegaMenu Style            =
+======================================*/
+
+#mega-menu-wrap-primary_navigation{
+	font-family: 'Gotham-Book';
+	text-align: center;
+
+	#mega-menu-primary_navigation {
+		display:inline-block;
+
+		li.mega-menu-flyout ul.mega-sub-menu{
+			margin-top: 2em;
+		}
+	  li.mega-menu-item.mega-menu-item-type-custom:nth-child(n) {
+		
+			border-right: 2px solid grey;
+		}
+		li.mega-menu-item:last-child{
+			border-right: 0;
+		}
+	}
+} 
+
+
+/*=========================================
+=            Tab Nav Services            =
+=========================================*/
+
+.nav-tabs{
+	border:0;
+	li{
+		a{
+			background: 0;
+			color:$text-dark-color;
+			i{
+				display: block;
+				font-size: 3em;
+				line-height: 0;
+
+			}
+			&:hover{
+				background: 0;
+				border:none;
+			}
+		}
+		&.active{
+				a, a:hover, a:focus{ 
+				background: 0;
+				border: 0;
+				color: $h2-color;
+				 &:after{
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 14.5px 17px 14.5px;
+					border-color: transparent transparent #fff transparent;
+					content:'';
+
+					}
+			  }
+			
+
+			}
+	}
+
+}
+.tab-content{
+	background:#fff;
+	padding: 5em 5em 3em 5em;
+	.tab-pane{
+		
+	}
+	
+	span{
+		font-size: 36px;
+		font-family: 'Gotham-Book';
+		margin-bottom: 1em;
+		display: inline-block;
+	}
+	
 }

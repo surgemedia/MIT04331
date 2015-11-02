@@ -20,6 +20,7 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
   'lib/function-svg-upload-able.php', // SVG able to upload
+  'lib/function-debug.php',        // Debug function
   'post_types/action-raname-posts.php',    // Newsletters
   'post_types/post-type-useful-links.php',    // Useful Links
   'post_types/post-type-team.php',    // Forms
@@ -28,11 +29,31 @@ $sage_includes = [
 
 ];
 
+
+/*==================================
+=            ACF-Option            =
+==================================*/
 if( function_exists('acf_add_options_page') ) {
   
   acf_add_options_page();
   
 }
+
+/*===========================================
+=            Set Mupltiple Menus            =
+===========================================*/
+add_action('init', 'my_custom_menus');
+function my_custom_menus() {
+    register_nav_menus(
+        array('footer-menu-1' => __('Footer Menu Col 1'), 
+              'footer-menu-2' => __('Footer Menu Col 2'),
+              'footer-menu-3' => __('Footer Menu Col 3'), 
+              'footer-menu-4' => __('Footer Menu Col 4')));
+}
+
+/*========================================
+=            Default Fuctions            =
+========================================*/
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {

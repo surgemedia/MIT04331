@@ -1,4 +1,4 @@
-<div class="jumbotron filter-purple" style="background:url('<?php
+<div class="jumbotron info filter-purple" style="background:url('<?php
 		the_field('background','option');
 		?>') center/cover;">
   

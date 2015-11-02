@@ -21,10 +21,21 @@
    -moz-osx-font-smoothing: grayscale
 }
 .icon-envelope:before{content:'\0041';}
-.icon-phone:before{content:'\0042';}
+.icon-outline-phone:before{content:'\0042';}
 .icon-linkedin:before{content:'\0043';}
 .icon-chevron:before{content:'\0044';}
-.icon-chevron-bold:before{content:'\0045';}
+.icon-chevron-thik:before{content:'\0045';}
+.icon-basic_alarm:before{content:'\0046';}
+.icon-basic_archive:before{content:'\0047';}
+.icon-basic_book_pencil:before{content:'\0048';}
+.icon-basic_calendar:before{content:'\0049';}
+.icon-basic_case:before{content:'\004A';}
+.icon-basic_chronometer:before{content:'\004B';}
+.icon-basic_compass:before{content:'\004C';}
+.icon-close:before{content:'\004D';}
+.icon-basic_webpage_txt:before{content:'\004E';}
+.icon-basic_link:before{content:'\004F';}
+.icon-basic_notebook:before{content:'\0050';}
 
 @font-face {
   font-family: 'Gotham';

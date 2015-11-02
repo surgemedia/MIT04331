@@ -1,0 +1,11 @@
+.sub-background{
+	&:hover{
+			h2, a, &{
+				color:#fff;
+			}
+			a{border-color:#fff;}
+			background: $form-background;
+			opacity: .8;
+			
+		}
+}

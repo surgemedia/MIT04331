@@ -9,6 +9,8 @@
     font-style:italic;
     color: $placeholder-color;
     font-weight:300;
+    padding-left: 1em;
+    padding-top: .1em;
 		}
 
 		
@@ -16,27 +18,27 @@
 
 
 .contact{
-    margin: 3em 0;
+    margin: 4em 0 4em 0;
     display: inline-block;
 	.content{
-		padding: 0 3.5em;
+		padding: 0 2.1em;
 		p{
 			line-height: 2;
 	    font-weight: 300;
-	    font-size: 1.3em;
       margin: 0 0 20px;
       color: $text-dark-color;
+      font-size: 19.95px;
 		}
 		h2{
 			color: $h2-color;
 			font-weight: 300;
 			margin-bottom: 1em;
-			font-size: 38px;
+			
 		}
 	}
 	.form{
 		background: $form-background;
-		padding: 1.5em 1em 1em 3em;
+		padding: 1em 1em 1em 2.2em;
 	  .gform_footer{
       text-align: right;
       padding: 0em 1em 0em 0em;
@@ -46,7 +48,7 @@
           border: 1px solid $grey !important;
           padding: 1em 6em !important;
           color: #fff !important;
-          font-size: 1.3em !important;
+          
           font-weight: 200!important;
         }
       }
@@ -58,7 +60,7 @@
 		width: 20%;
 		float:left;
 		color: #fff;
-		font-size: 1.3em;
+
 		font-weight: 200 !important;
 	}
     textarea,input{
@@ -110,7 +112,7 @@
                     color: $form-background !important;
                     
                     &:before{ 
-                      content:'\0044';
+                      content:'\0045';
                       position: relative;
                       display: inline-block;
                       top:1px;
