@@ -28,8 +28,12 @@
     <div class="contact-icons text-right col-lg-3">
           
             
-              <span class="icon-envelope" aria-hidden="true"></span>
-              <span class="icon-outline-phone" aria-hidden="true"></span>
+              <span class="icon-envelope" aria-hidden="true">
+                <div><?php the_field('email','option'); ?></div>
+              </span>
+              <span class="icon-outline-phone" aria-hidden="true">
+                <div><?php the_field('phone','option'); ?></div>
+              </span>
             <div class="line"></div>
             <span class="icon-linkedin" aria-hidden="true"></span>
           </div>

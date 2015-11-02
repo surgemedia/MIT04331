@@ -57,8 +57,13 @@
                           <div role="tabpanel" class="tab-pane fade <?php echo $class;?>" id="<?php echo $post->post_name.$place;?>">
                              <span><?php the_sub_field('title'); ?></span> 
                               <?php the_sub_field('content'); ?>
+                            
+                            <?php $target="extend-info-".get_the_id()."-".$place; ?>  
+                            <a href="" data-target=".<?php echo $target; ?>" data-url="<?php echo get_bloginfo('url');?>/wp-json/wp/v2/services-api?filter[p]=<?php the_id(); ?>" class="read-services">Read More</a>
+                          <div class="<?php echo $target; ?>"></div>
+
                           </div>
-         
+                            
                     <?php  $place++;
                             endwhile;?> 
 

@@ -21,10 +21,10 @@ $sage_includes = [
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
   'lib/function-svg-upload-able.php', // SVG able to upload
   'lib/function-debug.php',        // Debug function
-  'post_types/action-raname-posts.php',    // Newsletters
-  'post_types/post-type-useful-links.php',    // Useful Links
-  'post_types/post-type-team.php',    // Forms
-  'post_types/post-type-forms.php',    // Teams
+  'post_types/action-raname-posts.php',    // Resources
+  // 'post_types/post-type-useful-links.php',    // Useful Links
+  'post_types/post-type-team.php',    // Teams 
+  // 'post_types/post-type-forms.php',   // Forms 
   'post_types/post-type-services.php',    // Services
 
 ];

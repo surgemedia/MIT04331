@@ -29,6 +29,7 @@ function services_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
+
 	);
 	register_taxonomy( 'services', array(), $args );
 
@@ -74,6 +75,9 @@ function services_post_type() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
+		'show_in_rest'       => true,
+    'rest_base'          => 'services-api',
+    'rest_controller_class' => 'WP_REST_Posts_Controller',
 	);
 	register_post_type( 'service', $args );
 

@@ -60,5 +60,39 @@ jQuery('.customPrevBtn').click(function() {
     owl.trigger('prev.owl.carousel', [300]);
 });
 
+function getServiceInfo (url,container){
+
+    jQuery.getJSON(url, function(data) {
+    //alert(data); //uncomment this for debug
+    //alert (data.item1+" "+data.item2+" "+data.item3); //further debug
+    
+    var data = String(jQuery(data)[0].acf.sub_services[0].content);
+
+
+    jQuery(container).html(data);
+    
+
+
+    });
+
+    
+
+}
+
+function readMoreService (read_more_tag) {
+    
+        jQuery(read_more_tag).click(function(e){
+            e.preventDefault();
+            var url=jQuery(this).attr("data-url");
+            var container= jQuery(this).attr("data-target");
+            getServiceInfo(url,container);
+            jQuery(this).hide();
+          });
+    
+
+}
+readMoreService(".read-services");
+
+
     console.log( "ready!" );
 });

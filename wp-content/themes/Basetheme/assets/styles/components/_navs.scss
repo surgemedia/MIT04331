@@ -37,6 +37,45 @@
   padding-right: .25em;
   padding-left: .25em;
   }
+  .icon-envelope{
+		div{
+	  	display: none;
+	    position: absolute;
+	    font-size: 14px;
+	    font-weight: normal;
+	    background: #565656;
+	    padding: 1em 2em;
+	    color: #fff;
+	    right: 8em;
+    }
+    &:hover{
+    	div{
+    		display: block;
+    	}
+    }
+
+  }
+    .icon-outline-phone{
+		div{
+	  	display: none;
+	    position: absolute;
+	    font-size: 14px;
+	    font-weight: normal;
+	    background: #565656;
+	    padding: 1em 2em;
+	    color: #fff;
+	    right: 4em;
+	    &:hover{
+	    	display:block;
+	    }
+    }
+    &:hover{
+    	div{
+    		display: block;
+    	}
+    }
+
+  }
 }
 .icon-linkedin{
 	color: $linkedin-color;

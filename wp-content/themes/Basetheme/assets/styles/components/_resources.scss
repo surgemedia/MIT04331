@@ -1,3 +1,18 @@
 .resources{
 	background: $odd-background;
+	padding: 4em 0;
+
+	.resource-item {
+	    margin-bottom: 2em;
+	    border-bottom: 1px solid #999999;
+	    padding-bottom: 3em;
+		
+		small{
+			font-weight: 200;
+			color: #999999;
+		}
+
+	}
+
+
 }

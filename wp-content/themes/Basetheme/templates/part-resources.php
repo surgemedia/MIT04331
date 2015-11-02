@@ -45,11 +45,40 @@
         $the_query->the_post();?>
                   <!-- Tab panes -->
                   
-            
+            <div class="resource-item">
+              
+               <small><i><?php the_time( 'd F Y'); ?></i></small> 
+               <?php switch ($value->slug) {
+                  case 'newsletters': 
+                  case 'useful-links':?>
+                    <a href="<?php echo the_field('url'); ?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+                  <?php  break;
+                  case 'forms': $file = get_field('file'); ?>
+                     <a href="<?php echo $file['url']; ?>"><h2><?php the_title(); ?></h2></a>
+                  <?php  break;
+                  default:
+                    # code...
+                    break;
+                } ?>
 
-                     <span><?php the_title(); ?></span> 
-                      <?php the_content(); ?>
-                  
+                <?php the_content(); ?>
+                
+                <?php switch ($value->slug) {
+                  case 'newsletters': $file = get_field('file'); ?>
+                     <a href="<?php echo $file['url']; ?>">Read More</a>
+                  <?php  break;
+                  case 'useful-links': ?>
+                     <a href="<?php echo the_field('url'); ?>" target="_blank"><?php echo the_field('url'); ?></a>
+                  <?php  break;
+                  case 'forms': $file = get_field('file'); ?>
+                     <a href="<?php echo $file['url']; ?>"><?php echo $file['filename']; ?></a>
+                  <?php  break;
+                  default:
+                    # code...
+                    break;
+                } ?>
+                
+            </div>
  
 
 
