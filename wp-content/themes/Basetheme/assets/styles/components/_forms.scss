@@ -39,7 +39,10 @@
 	.form{
 		background: $form-background;
 		padding: 1em 1em 1em 2.2em;
-	  .gform_footer{
+	  .gfield_required{
+      color:#A5A5C3;
+    }
+    .gform_footer{
       text-align: right;
       padding: 0em 1em 0em 0em;
       margin: 0;
@@ -50,6 +53,11 @@
           color: #fff !important;
           
           font-weight: 200!important;
+        &:hover{
+          background: #8B8B9E !important;
+          
+          
+        }
         }
       }
   }

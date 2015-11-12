@@ -1,4 +1,4 @@
-<div class="resources">
+<div class="resources first">
   <div class="container">
  
 
@@ -9,7 +9,7 @@
            $first==true ? $class="active": $class=""; ?>
          
                   
-              <li role="presentation" class="col-lg-3 text-center <?php echo $class;?>" >
+              <li role="presentation" class="col-lg-4 text-center <?php echo $class;?>" >
                 <a href="#<?php echo $value->slug;?>" aria-controls="<?php echo $value->slug;?>" role="tab" data-toggle="tab">
                   <small><?php echo $value->name; ?> </small>
                   <i class="icon-<?php the_field('icon', $value); ?>"></i>
@@ -64,8 +64,8 @@
                 <?php the_content(); ?>
                 
                 <?php switch ($value->slug) {
-                  case 'newsletters': $file = get_field('file'); ?>
-                     <a href="<?php echo $file['url']; ?>">Read More</a>
+                  case 'newsletters': ?>
+                     <a href="<?php echo the_field('url'); ?>">Read More</a>
                   <?php  break;
                   case 'useful-links': ?>
                      <a href="<?php echo the_field('url'); ?>" target="_blank"><?php echo the_field('url'); ?></a>

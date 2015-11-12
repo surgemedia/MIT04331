@@ -47,8 +47,12 @@
 	    padding: 1em 2em;
 	    color: #fff;
 	    right: 8em;
+	    a{
+	    	text-decoration: none;
+	    	color:#fff;
+	    }
     }
-    &:hover{
+    &.active{
     	div{
     		display: block;
     	}
@@ -65,11 +69,13 @@
 	    padding: 1em 2em;
 	    color: #fff;
 	    right: 4em;
-	    &:hover{
-	    	display:block;
+	    width: 180px;
+	    a{
+	    	text-decoration: none;
+	    	color:#fff;
 	    }
     }
-    &:hover{
+    &.active{
     	div{
     		display: block;
     	}
@@ -79,6 +85,14 @@
 }
 .icon-linkedin{
 	color: $linkedin-color;
+	font-size: 1.5em;
+  line-height: 2;
+  vertical-align: baseline;
+  padding-right: .25em;
+  padding-left: .25em;
+  &:hover{
+  	color: $linkedin-color;
+  }
 }
 /*======================================
 =            MegaMenu Style            =
@@ -94,9 +108,9 @@
 		li.mega-menu-flyout ul.mega-sub-menu{
 			margin-top: 2em;
 		}
-	  li.mega-menu-item.mega-menu-item-type-custom:nth-child(n) {
+	  > li.mega-menu-item {
 		
-			border-right: 2px solid grey;
+			border-right: 1px solid grey;
 		}
 		li.mega-menu-item:last-child{
 			border-right: 0;
@@ -124,7 +138,9 @@
 			&:hover{
 				background: 0;
 				border:none;
+				color: $h2-color;
 			}
+
 		}
 		&.active{
 				a, a:hover, a:focus{ 
@@ -151,7 +167,10 @@
 	background:#fff;
 	padding: 5em 5em 3em 5em;
 	.tab-pane{
-		
+		a{
+			color:$h2-color;
+			text-decoration: none;
+		}
 	}
 	
 	span{

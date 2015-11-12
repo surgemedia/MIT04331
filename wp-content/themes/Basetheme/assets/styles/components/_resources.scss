@@ -4,9 +4,12 @@
 
 	.resource-item {
 	    margin-bottom: 2em;
-	    border-bottom: 1px solid #999999;
+	    border-bottom: 1px solid $grey;
 	    padding-bottom: 3em;
-		
+		a{
+			text-decoration: none;
+			color:$h2-color
+		}
 		small{
 			font-weight: 200;
 			color: #999999;

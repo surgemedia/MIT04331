@@ -14,13 +14,21 @@
 		    <ul class="logos">
 		        <?php foreach( $images as $image ): ?>
 		            <li>
-		                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+		                <div>
+		                	<img src="<?php echo aq_resize($image[url],130,130); ?>" alt="<?php echo $image['alt']; ?>" />
+		                </div>
 		            </li>
 		        <?php endforeach; ?>
 		    </ul>
 		<?php endif; ?>
 
-    <?php the_field('info_content', 'option'); ?>
-  	
+    <div class="content">
+    	<?php the_field('info_content', 'option'); ?>
+    </div>
+		<?php $page = get_page_by_title( 'About M&A' );
+      if(!($page->ID == get_the_ID())) {?>
+        <a href="<?php echo site_url();?>/about-ma">Learn More</a>
+     <?php } ?>
+		
   </div>
 </div>

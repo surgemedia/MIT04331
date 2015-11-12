@@ -1,4 +1,4 @@
-<div class="contact">
+<div class="contact first">
   
     <?php
     // query for the about page

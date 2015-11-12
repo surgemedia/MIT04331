@@ -27,12 +27,16 @@
 @import "components/_resources";
 @import "components/_wp-classes";
 @import "components/_jumbotron";
+@import "components/_contact";
 @import "layouts/_header";
 @import "layouts/_sidebar";
 @import "layouts/_footer";
 @import "layouts/_pages";
 @import "layouts/_posts";
 
+@media (max-width: $screen-sm-max) {
+	@import "layouts/_res-xs-sm.scss";
+}
 @media (max-width: $screen-xs-max) {
 	@import "layouts/_res-xs.scss";
 }

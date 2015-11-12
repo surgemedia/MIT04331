@@ -44,14 +44,29 @@
 }
 .info{
 		height:650px;
+		a{
+			text-decoration: none;
+			color:#fff;
+			font-size: 24px;
+			padding: 1em 4em;
+			border: 1px solid #fff;
+		}
+		.content {
+	    height: 140px;
+	    overflow: hidden;
+	    margin-bottom: 3em;
+		}
 }
 
 ul.logos{
 	list-style: none;
 	display: block;
 	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 2em;
 	li{
 		display: inline-block;
+		margin: 0 1em;
 	}
 }
 

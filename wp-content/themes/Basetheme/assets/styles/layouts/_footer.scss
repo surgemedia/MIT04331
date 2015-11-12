@@ -20,7 +20,7 @@
 	}
 	
 	.copy-right{
-		margin-bottom: 10em;
+		margin-bottom: 2em;
 	}
 
 	.linkedin{
@@ -31,6 +31,10 @@
     font-weight: 900;
     font-family: Gotham;
     padding-left: 2em;
+    a{
+    	text-decoration: none;
+    	color:$grey;
+    }
     img{
       width: 9em;
     }

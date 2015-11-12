@@ -21,6 +21,7 @@ $sage_includes = [
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
   'lib/function-svg-upload-able.php', // SVG able to upload
   'lib/function-debug.php',        // Debug function
+  'lib/aq_resizer.php',        // Aqua Resizer
   'post_types/action-raname-posts.php',    // Resources
   // 'post_types/post-type-useful-links.php',    // Useful Links
   'post_types/post-type-team.php',    // Teams 

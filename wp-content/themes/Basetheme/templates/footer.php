@@ -11,8 +11,8 @@
   		</div>
   		<div class="col-lg-5">
   			<div class="linkedin">
-          FIND US ON
-          <img src="<?php the_field('linkedin_logo','option') ?>" alt="<?php echo $image['alt']; ?>" />
+          <a href="<?php the_field('linkedin','option') ?>" target="_blank">FIND US ON
+            <img src="<?php the_field('linkedin_logo','option') ?>" alt="<?php echo $image['alt']; ?>" /></a>
         </div>
   		</div>
   	</div>
@@ -40,4 +40,5 @@
       <small><?php the_field('copy_right','option') ?></small>
     </div>
   </div>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 </footer>

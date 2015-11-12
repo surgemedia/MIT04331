@@ -13,7 +13,7 @@
 
       while ( $the_query->have_posts() ) {
         $the_query->the_post();?>
-        <div class="service-row <?php echo $color; ?>">
+        <div class="first service-row <?php echo $color; ?>">
           <div class="container">
             <div class="header text-center">
               <h2><?php the_title(); ?></h2>
@@ -60,7 +60,8 @@
                             
                             <?php $target="extend-info-".get_the_id()."-".$place; ?>  
                             <a href="" data-target=".<?php echo $target; ?>" data-url="<?php echo get_bloginfo('url');?>/wp-json/wp/v2/services-api?filter[p]=<?php the_id(); ?>" class="read-services">Read More</a>
-                          <div class="<?php echo $target; ?>"></div>
+                            
+                          <div class="<?php echo $target; ?>"> <i class="loading"></i></div>
 
                           </div>
                             

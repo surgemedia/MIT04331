@@ -1,11 +1,12 @@
 .sub-background{
 	&:hover{
-			h2, a, &{
+			h2, a, .read-more, &{
 				color:#fff;
 			}
-			a{border-color:#fff;}
+			.read-more{border-color:#fff;}
 			background: $form-background;
 			opacity: .8;
 			
 		}
 }
+
