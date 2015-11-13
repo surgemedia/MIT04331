@@ -7,8 +7,8 @@ if( have_rows('services') ):
 
   // loop through the rows of data
     while ( have_rows('services') ) : the_row();?>
-      <div class="card col-lg-4" style="background:url('<?php the_sub_field('thumbnail')
-    ?>') <?php the_sub_field('thumbnail_focus') ?>" > 
+      <div class="card col-lg-4" style="background-image:url('<?php the_sub_field('thumbnail')
+    ?>'); background-position:<?php the_sub_field('thumbnail_focus') ?>" > 
       
       <a href="<?php the_sub_field('link_page'); ?> " class="sub-background text-center">
           <h2><?php the_sub_field('title'); ?></h2>
