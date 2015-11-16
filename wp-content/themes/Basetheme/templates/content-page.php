@@ -1,4 +1,4 @@
-<div class="content-page text-center">
+<div class="first content-page text-center">
 
 <?php
 
