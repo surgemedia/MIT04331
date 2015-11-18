@@ -115,14 +115,16 @@ readMoreService(".read-services");
 =            Scrolling down            =
 ======================================*/
 
-
- jQuery('.scrollDown').click(function(e){
-    e.preventDefault();
-    jQuery('html, body').animate({
-        scrollTop: jQuery( '.first:first' ).offset().top - 100
-    }, 500);
-    return false;
-});
+if ($(window).width() <= 767){  
+    // do something here
+   jQuery('.scrollDown').click(function(e){
+      e.preventDefault();
+      jQuery('html, body').animate({
+          scrollTop: jQuery( '.first:first' ).offset().top - 164
+      }, 500);
+      return false;
+  });
+  }
 
 
 /*===========================================
