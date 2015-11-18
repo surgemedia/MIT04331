@@ -115,7 +115,7 @@ readMoreService(".read-services");
 =            Scrolling down            =
 ======================================*/
 
-if ($(window).width() <= 767){  
+if (jQuery(window).width() <= 767){  
     // do something here
    jQuery('.scrollDown').click(function(e){
       e.preventDefault();
