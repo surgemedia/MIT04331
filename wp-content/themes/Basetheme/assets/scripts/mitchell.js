@@ -120,7 +120,7 @@ if (jQuery(window).width() <= 767){
    jQuery('.scrollDown').click(function(e){
       e.preventDefault();
       jQuery('html, body').animate({
-          scrollTop: jQuery( '.first:first' ).offset().top - 164
+          scrollTop: jQuery( '.first:first' ).offset().top - 38
       }, 500);
       return false;
   });
