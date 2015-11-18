@@ -78,10 +78,20 @@ p{
     padding: 2em 0.2em 1em .5em;
   }
 }
-
+.hero p:last-child {
+    padding-top: 1em;
+}
 /*================================
 =            Services            =
 ================================*/
+.nav-tabs{
+  li{
+    a{ 
+      small{display:none;}
+      i{font-size: 2.5em;}  
+    }
+  }
+}
 .tab-content{
 padding: 3em 1em 3em 1em;
 }
