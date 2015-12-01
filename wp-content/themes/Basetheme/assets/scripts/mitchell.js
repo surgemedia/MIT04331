@@ -153,9 +153,9 @@ toggleActiveClass.toggle(".contact-icons");
 /*=============================================
 =            Scrolling Menu Mobile            =
 =============================================*/
-$(window).resize(function(){
+jQuery(window).resize(function(){
 
-   if ($(window).width() <= 768) {  
+   if (jQuery(window).width() <= 768) {  
     var contentTop=0;
     var lastScrollTop = 0;
     jQuery(window).scroll(function(event) {
