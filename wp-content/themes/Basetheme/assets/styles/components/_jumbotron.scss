@@ -39,9 +39,7 @@
 	
 }
 
-.hero{
-	height:600px;
-}
+
 .info{
 		height:650px;
 		a{
@@ -71,12 +69,13 @@ ul.logos{
 }
 
 .hero{
-	padding-top: 5em;
+	padding-top: 10em;
+	height:600px;
 	p{
 	  width: 80%;
 	 
 	}
 	p:last-child{
-		padding-top: 3em;
+		padding-top: 0em;
 	}
 }

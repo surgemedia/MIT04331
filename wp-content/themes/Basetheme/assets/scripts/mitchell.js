@@ -153,27 +153,33 @@ toggleActiveClass.toggle(".contact-icons");
 /*=============================================
 =            Scrolling Menu Mobile            =
 =============================================*/
-var contentTop=0;
-var lastScrollTop = 0;
-jQuery(window).scroll(function(event) {
-   var st = jQuery(this).scrollTop();
-   var contentTop=parseInt(jQuery('.fluid-container').css('top'),10);
-      
-    if (st > lastScrollTop){
-           // downscroll code
-           if (contentTop===0 && st>64){
-              jQuery('.fluid-container').css('top','-=64');
-            }
-       } else {
-          // upscroll code
-          if (contentTop<0){
-             jQuery('.fluid-container').css('top','+=64');
-          }
-       }
-     
-   lastScrollTop = st;
-});
+$(window).resize(function(){
 
+   if ($(window).width() <= 768) {  
+    var contentTop=0;
+    var lastScrollTop = 0;
+    jQuery(window).scroll(function(event) {
+       var st = jQuery(this).scrollTop();
+       var contentTop=parseInt(jQuery('.fluid-container').css('top'),10);
+          
+        if (st > lastScrollTop){
+               // downscroll code
+               if (contentTop===0 && st>64){
+                  jQuery('.fluid-container').css('top','-=64');
+                }
+           } else {
+              // upscroll code
+              if (contentTop<0){
+                 jQuery('.fluid-container').css('top','+=64');
+              }
+           }
+         
+       lastScrollTop = st;
+    });
+
+  }     
+
+});
 
 /*=========================================
 =            Google Map Script            =
