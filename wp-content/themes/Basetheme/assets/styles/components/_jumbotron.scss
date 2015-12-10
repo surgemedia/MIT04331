@@ -1,6 +1,9 @@
 .jumbotron{
 	margin-bottom: 0;
 	position: relative;
+	display: table-cell;
+  vertical-align: middle;
+
 	.container{
 		position: relative;
 		color: $text-light-color;
@@ -42,6 +45,7 @@
 
 .info{
 		height:650px;
+		width: 100vw;
 		a{
 			text-decoration: none;
 			color:#fff;
@@ -68,7 +72,7 @@ ul.logos{
 	}
 }
 
-.hero{
+/*.hero{
 	padding-top: 10em;
 	height:600px;
 	p{
@@ -78,4 +82,4 @@ ul.logos{
 	p:last-child{
 		padding-top: 0em;
 	}
-}
+}*/

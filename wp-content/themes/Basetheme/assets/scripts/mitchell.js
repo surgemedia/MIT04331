@@ -4,6 +4,7 @@ jQuery( document ).ready(function() {
   =            Select Chosen            =
   =====================================*/
   jQuery(".form-field div select").chosen({disable_search_threshold: 10});
+
   
   /*===================================
   =            Owl Carousel           =
@@ -115,7 +116,7 @@ readMoreService(".read-services");
 =            Scrolling down            =
 ======================================*/
 
-if (jQuery(window).width() <= 767){  
+  
     // do something here
    jQuery('.scrollDown').click(function(e){
       e.preventDefault();
@@ -124,7 +125,7 @@ if (jQuery(window).width() <= 767){
       }, 500);
       return false;
   });
-  }
+  
 
 
 /*===========================================
@@ -155,7 +156,7 @@ toggleActiveClass.toggle(".contact-icons");
 =============================================*/
 jQuery(window).resize(function(){
 
-   if (jQuery(window).width() <= 768) {  
+   if (jQuery(window).width() < 768) {  
     var contentTop=0;
     var lastScrollTop = 0;
     jQuery(window).scroll(function(event) {
@@ -177,6 +178,27 @@ jQuery(window).resize(function(){
        lastScrollTop = st;
     });
 
+  }else{
+    console.log("menuscroll");
+    jQuery('.fluid-container').css('top','0');
+    jQuery(window).scroll(function(event) {
+       var st = jQuery(this).scrollTop();
+       var contentTop=0;
+          
+        if (st > lastScrollTop){
+               // downscroll code
+               if (contentTop===0 && st>64){
+                  jQuery('.fluid-container').css('top','-=0');
+                }
+           } else {
+              // upscroll code
+              if (contentTop<0){
+                 jQuery('.fluid-container').css('top','+=0');
+              }
+           }
+         
+       
+    });
   }     
 
 });
