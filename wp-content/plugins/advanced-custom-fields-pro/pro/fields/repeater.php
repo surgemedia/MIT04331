@@ -92,10 +92,20 @@ class acf_field_repeater extends acf_field {
 	
 	function render_field( $field ) {
 		
+		// vars
+		$div = array(
+			'class' 		=> 'acf-repeater',
+			'data-min' 		=> $field['min'],
+			'data-max'		=> $field['max']
+		);
+		
+		
 		// ensure value is an array
 		if( empty($field['value']) ) {
 		
 			$field['value'] = array();
+			
+			$div['class'] .= ' -empty';
 			
 		}
 		
@@ -110,7 +120,7 @@ class acf_field_repeater extends acf_field {
 		
 		foreach( $field['sub_fields'] as $f ) {
 			
-			$empty_row[ $f['key'] ] = isset( $f['default_value'] ) ? $f['default_value'] : false;
+			$empty_row[ $f['key'] ] = isset( $f['default_value'] ) ? $f['default_value'] : null;
 			
 		}
 				
@@ -187,9 +197,9 @@ class acf_field_repeater extends acf_field {
 		
 		if( $field['layout'] == 'row' ) {
 		
-			$el = 'tr';
-			$before_fields = '<td class="acf-table-wrap"><table class="acf-table">';
-			$after_fields = '</table></td>';
+			$el = 'div';
+			$before_fields = '<td class="acf-fields -left">';
+			$after_fields = '</td>';
 			
 		} elseif( $field['layout'] == 'block' ) {
 		
@@ -201,15 +211,22 @@ class acf_field_repeater extends acf_field {
 		}
 		
 		
+		// layout
+		$div['class'] .= ' -' . $field['layout'];
+		
+		
 		// hidden input
 		acf_hidden_input(array(
 			'type'	=> 'hidden',
 			'name'	=> $field['name'],
 		));
 		
+		
+		
+		
 ?>
-<div <?php acf_esc_attr_e(array( 'class' => 'acf-repeater', 'data-min' => $field['min'], 'data-max'	=> $field['max'] )); ?>>
-<table <?php acf_esc_attr_e(array( 'class' => "acf-table acf-input-table {$field['layout']}-layout" )); ?>>
+<div <?php acf_esc_attr_e($div); ?>>
+<table class="acf-table">
 	
 	<?php if( $field['layout'] == 'table' ): ?>
 		<thead>
@@ -234,7 +251,6 @@ class acf_field_repeater extends acf_field {
 					}
 						
 					?>
-					
 					<th <?php acf_esc_attr_e( $atts ); ?>>
 						<?php acf_the_field_label( $sub_field ); ?>
 						<?php if( $sub_field['instructions'] ): ?>
@@ -298,8 +314,8 @@ class acf_field_repeater extends acf_field {
 				
 				<?php if( $show_remove ): ?>
 					<td class="remove">
-						<a class="acf-icon small acf-repeater-add-row" href="#" data-before="1" title="<?php _e('Add row','acf'); ?>"><i class="acf-sprite-add"></i></a>
-						<a class="acf-icon small acf-repeater-remove-row" href="#" title="<?php _e('Remove row','acf'); ?>"><i class="acf-sprite-remove"></i></a>
+						<a class="acf-icon acf-icon-plus small acf-repeater-add-row" href="#" data-before="1" title="<?php _e('Add row','acf'); ?>"></a>
+						<a class="acf-icon acf-icon-minus small acf-repeater-remove-row" href="#" title="<?php _e('Remove row','acf'); ?>"></a>
 					</td>
 				<?php endif; ?>
 				
@@ -309,7 +325,7 @@ class acf_field_repeater extends acf_field {
 </table>
 <?php if( $show_add ): ?>
 	
-	<ul class="acf-hl acf-clearfix">
+	<ul class="acf-hl">
 		<li class="acf-fr">
 			<a href="#" class="acf-button blue acf-repeater-add-row"><?php echo $field['button_label']; ?></a>
 		</li>

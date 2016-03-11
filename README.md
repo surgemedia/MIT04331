@@ -51,7 +51,66 @@ Password: zh*a9aJ2zVsWAa56Cd!+
 ```
 
 ##Post Types
-- Articles(posts)
+- Newsletter(posts) √
+- Services √
+- Team √
+- Useful Links √
+- Forms √
+
+##ACF Fields
+- ~~Newsletters-PostType-Fields~~ 
+  - ~~Title~~
+  - ~~Content~~
+
+- Useful_Link-PostType-Fields √
+  - Title
+  - Content
+  - Url
+  
+- Forms-PostType-Fields √
+  - Title
+  - Content
+  - File (pdf)
+
+- ~~Home-Template~~ 
+  - ~~Title~~
+  - ~~Content~~
+  
+- Team-PostType-Fields √
+  - Title (Name)
+  - Content (default)
+  - Role 
+  - ~~Link~~
+  - Feature Img
+  
+- Contact-Page-Fields √
+  - Google Map / Office Photo
+  
+- Business-Page-Fields √
+  - Repeater
+    - Title
+    - Content
+    - Repeater (max 6)
+      - title
+      - icon
+      - content
+ 
+- Option-Page-Fields √
+  - Title
+  - Address
+  - Phone
+  - LinkIn link
+  - Copy right
+  - Logos Gallery
+  
+- Services-PostType-Fields 
+  - Title
+  - Content
+  - Repeater
+    - text
+  - Link page
+ 
+ 
 
 
 ##Sitemp
