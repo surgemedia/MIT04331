@@ -1,0 +1,59 @@
+.content-info{
+	background: #1f1f3d;
+	color: $text-light-color;
+	font-weight: 300;
+	padding-top: 5em; 
+	
+	.footer-menu{
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey;
+		padding: 2em 0;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		a{
+			 padding: 10px 0;
+			 color: $grey;
+			&:hover{
+				background: none;
+			}
+		}
+	}
+	
+	.copy-right{
+		margin-bottom: 2em;
+	}
+
+	.linkedin{
+	  width: 10em;
+    margin: 5em auto 0;
+    font-size: .9em;
+    font-style: normal;
+    font-weight: 900;
+    font-family: Gotham;
+    padding-left: 2em;
+    a{
+    	text-decoration: none;
+    	color:$grey;
+    }
+    img{
+      width: 9em;
+    }
+	}
+
+	ul{
+		list-style: none;
+		padding:0;
+		li{
+			b{
+				width: 5em;
+				font-family: Gotham;
+				font-weight: normal;
+				font-style: normal;
+				display:inline-block;
+			}
+			p{
+				display:inline-block;
+			}
+		}
+	}
+}

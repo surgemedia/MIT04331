@@ -1,0 +1,46 @@
+.brand {
+    text-align: center;
+}
+#mega-menu-primary_navigation{
+	background: #e5e5e5 !important;
+
+}
+
+.navbar-default{
+	width:100%;
+}
+.mega-menu-toggle{
+	position: absolute;
+  top: -64px;
+}
+.contact-icons{
+	position: absolute;
+  right: 0;
+  top: 18px;
+}
+
+.hero{
+	padding-top: 10em;
+	height:600px;
+	width: 100vw;
+	
+  background-size:cover;
+  background-repeat:no-repeat;
+	p{
+	  width: 80%;
+	 
+	}
+	p:last-child{
+		padding-top: 0em;
+	}
+	&.right{
+		background-position-x:80%;
+	}
+	&.left{
+		background-position-x:20%;
+	}
+	&.middle{
+		background-position-x:50%;
+	}
+}
+

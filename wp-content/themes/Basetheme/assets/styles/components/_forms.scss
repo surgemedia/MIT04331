@@ -1,0 +1,147 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+		
+	@include placeholder {
+    font-style:italic;
+    color: $placeholder-color;
+    font-weight:300;
+    padding-left: 1em;
+    padding-top: .1em;
+		}
+
+		
+
+
+
+.contact{
+    margin: 4em 0 4em 0;
+    display: inline-block;
+	.content{
+		padding: 0 2.1em;
+		p{
+			line-height: 2;
+	    font-weight: 300;
+      margin: 0 0 20px;
+      color: $text-dark-color;
+      font-size: 19.95px;
+		}
+		h2{
+			color: $h2-color;
+			font-weight: 300;
+			margin-bottom: 1em;
+			
+		}
+	}
+	.form{
+		background: $form-background;
+		padding: 1em 1em 1em 2.2em;
+	  .gfield_required{
+      color:#A5A5C3;
+    }
+    .gform_footer{
+      text-align: right;
+      padding: 0em 1em 0em 0em;
+      margin: 0;
+      .gform_button{
+          background: 0 !important;
+          border: 1px solid $grey !important;
+          padding: 1em 6em !important;
+          color: #fff !important;
+          
+          font-weight: 200!important;
+        &:hover{
+          background: #8B8B9E !important;
+          
+          
+        }
+        }
+      }
+  }
+}
+
+.form-field{
+	label{
+		width: 20%;
+		float:left;
+		color: #fff;
+
+		font-weight: 200 !important;
+	}
+    textarea,input{
+        background: $grey;
+        border: 0;
+    }
+	textarea{
+		height: 6.625em !important;
+	}
+	div{
+		width: 80%;
+		float:left;
+		margin-bottom: 2em;
+
+	}
+}
+
+/*=============================================
+=            Select Boxes - Chosen            =
+=============================================*/
+
+.chosen-container {
+    width: 97.5% !important;
+    font-size: 14px !important;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0 !important;
+    a{
+        background: $grey !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        height: 31px !important;
+        line-height: 34px !important;
+    }
+    .chosen-single{
+        span{
+            margin-left: 41px;
+            margin-right: 0 !important;
+            font-weight: 300;
+            font-style: italic;
+        }
+        div{
+            left: 9px;
+            width: 23px !important;
+            border-right: 1px solid $form-background;
+            
+            b {
+                    background: 0 !important;
+                    color: $form-background !important;
+                    
+                    &:before{ 
+                      content:'\0045';
+                      position: relative;
+                      display: inline-block;
+                      top:1px;
+                      font-family: 'Mitchell';
+                      font-style: normal;
+                      font-weight: normal;
+                      line-height: 1;
+                      -webkit-font-smoothing: antialiased;
+                      -moz-osx-font-smoothing: grayscale
+                    }
+                }
+        }
+    }
+    .chosen-drop {
+        border-radius: 0 !important;
+        background: $grey !important;
+        .chosen-results {
+          
+          li.active-result.highlighted {
+            background: rgba(0,0,46,.42);
+          }
+        }
+    }
+}

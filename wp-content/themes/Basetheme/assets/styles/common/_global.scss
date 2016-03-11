@@ -1,1 +1,40 @@
+body{
+padding-top: 100px;
 
+
+}
+h1{
+	
+	font-weight: 200;
+}
+h2{
+	font-family: 'Gotham-Book';
+	font-size: 40px;
+	color: $h2-color;
+}
+h3{
+	font-family: 'Gotham-Book';
+	font-size: 24px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 16px;
+}
+h6{
+	font-size: 14px;
+}
+
+p, ul, a{
+	font-family: 'Gotham-Book';	
+}
+
+p{line-height: 1.8em;}
+
+.odd-background{
+	background: $odd-background;
+}
+.even-background{
+	background: $even-background;
+}

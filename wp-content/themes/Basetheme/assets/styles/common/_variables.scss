@@ -1,5 +1,8 @@
 // Glyphicons font path
-$icon-font-path:        "../fonts/";
+$icon-font-path:        	'../fonts/';
+$font-size-base:        	18px;
+$font-family-sans-serif: 	'Gotham';
+$grid-gutter-width:       20px;
 
 // Grid settings
 $main-sm-columns:       12;
@@ -7,3 +10,12 @@ $sidebar-sm-columns:    4;
 
 // Colors
 $brand-primary:         #27ae60;
+$form-background:				#555566;
+$placeholder-color:			#505050;
+$h2-color:							#415e9e;
+$grey:									#e5e5e5;
+$text-light-color:			#f0f0f0;
+$text-dark-color:				#333333;
+$linkedin-color:        #0077b5;
+$odd-background:				#f0f0f0;
+$even-background:				#d8d8e5;

@@ -1,0 +1,32 @@
+.sub-background{
+	&:hover{
+			h2, a, .read-more, &{
+				color:#fff;
+			}
+			.read-more{border-color:#fff;}
+			background: $form-background;
+			opacity: .8;
+			
+		}
+}
+
+h1{
+	font-size: 60px;
+	
+}
+
+.hero{
+		height: 46vw;
+    width: 100vw;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding: 11em 0 0 0;
+	p{
+	  width: 80%;
+	 
+	}
+	p:last-child{
+		padding-top: 0em;
+	}
+}
